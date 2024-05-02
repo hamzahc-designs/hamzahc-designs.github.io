@@ -8,16 +8,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>   
     <body>
-        <h1>Air Quality</h1>
+        <h1>Air Quality in Seoul</h1>
         <p class ="name">By Hamzah Chamdia</p>
         <div class ="divider"></div>
-        <p>Air is important for life. It is composed of 70% nitrogen, 20% oxygen and 10% other elements.
-             Oxygen is fundamental for cellular respiration in aerobic organisms.</p>
-             <img src = "images/rhode_island.png">
-        <p>Without air you will die. No oxygen = no aerobic respiration. For this reason, it is important to ensure access
-            to clean air. </p>
-            <img class="big" src = "images/air_NASA.png">
+        <p>South Korea - an ''Asian Tiger'' country hailed as a shining example of the power of hard work and democracy.
+             The once impoverished nation has now attained both wealth and global relevance, with its export-based
+              economy encompassing everything from Samsung electronics to K-pop. Of course, the question of development
+               is a complex one, and there is arguably a price to be paid when nations industrialize. In South Korea's case,
+                rapid industrialization centered around its capital city of Seoul, combined with the ongoing industrialization of neighboring China,
+                has created a long-standing air quality problem in the city. Fortunately, the government has been aware of this problem for some time.
+                It has recorded and publicized hourly air pollution data from each district in Seoul since 1988, and
+                has taken steps to actively improve the situation. </p>
+             <img src = "images/graph_1.jpg">
+        <p>Air quality has numerous measures. PM10 and PM2.5 refer to the presence of airborne particulate matter less than 10 and 2.5 microns in diameter.
+             Such particles are known to have adverse effects on our health, with PM2.5 being a subset of PM10 that is thought to be particularly dangerous.
+              According to WHO guidelines, PM10 levels should not exceed an average of 15 units/day, a limit that is far below the current levels in Seoul.
+               As the chart above shows, however, air quality has markedly improved in the past two decades,
+                likely due to new government policies/initiatives to address it.</p>
+        <p>When looking at the data, I also noticed much of the improvement in air quality has happened over the past few years.
+             This may be in part due to the COVID pandemic and associated reductions in the use of cars and public transport.
+              I decided to break it up by district, and found that the most polluted one is Guro-gu. Even that district, however,
+               has experienced marked improvement since 2019. The data I have only goes up to 2022,
+                so it would be interesting to see if there was potentially a slight increase in the past year. </p>
+            <img src = "images/graph_2.jpg">
+        <p>I was also interested in whether air pollution changes seasonally. This time, I looked at additional markers of air pollution.
+            I found that, with the exception of zone, all indicators tend to reach a low in the summer. This may be because people are
+             consuming less energy during the summer, as there is no need for heating. Sunlight does facilitate the production of ozone, however,
+             which explains why it doesn't follow the trend.</p>
+             <img src = "images/graph_3.jpg">
         <h2>About this story</h2>
-        <p>Here's a <a href="https://www.brown.edu/">link</a>.</p>
+        <p>The air quality data was obtained from a South Korean government webiste (see <a href="https://data.seoul.go.kr/dataList/OA-15526/S/1/datasetView.do">here</a>,
+            <a href="https://data.seoul.go.kr/dataList/OA-15516/S/1/datasetView.do">here</a> and <a href="https://data.seoul.go.kr/dataList/OA-15515/S/1/datasetView.do">here</a> ). In order to generate
+            the cartograms, I used shape files from <a href="https://github.com/southkorea/seoul-maps">this github repository</a>. All work was done in
+            RStudio and Adobe Illustrator.</p>
+
+        <p>Further reading (sources):</p>
+            <ul>
+                <li><a href="https://www.unep.org/news-and-stories/story/once-enough-stain-shirt-collars-smog-lifting-over-greater-seoul#:~:text=The%20report%20found%20that%20annual,reductions%20in%20Seoul%20and%20Gyeonggi.">UN Story</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Air_pollution_in_South_Korea">Wikipedia</a></li>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health">WHO on air quality measures</a></li>
+                <li><a href="https://www.epa.gov/americaschildrenenvironment/environments-and-contaminants-criteria-air-pollutants#:~:text=About%20the%20Criteria%20Air%20Pollutants%20Indicators,-Indicators%20E1%20and&text=Air%20pollution%20contributes%20to%20a,nitrogen%20dioxide%2C%20and%20sulfur%20dioxide.">EPA on air quality measures</a></li>
+                <li><a href="https://www.c40knowledgehub.org/s/article/WHO-Air-Quality-Guidelines?language=en_US#:~:text=The%20current%20guidelines%20state%20that,3%20%2D%204%20days%20per%20year.
+                    ">WHO air quality guidelines</a></li>
+                <li><a href="https://scied.ucar.edu/learning-zone/air-quality/how-weather-affects-air-quality#:~:text=Some%20pollution%2C%20such%20as%20ground,cities%20or%20nearby%20rural%20areas.">Sunlight and Ozone</a></li>
+            </ul>
     </body>
 </html>
